@@ -1,0 +1,4 @@
+.idea/
+Pipfile
+Pipfile.lock
+src/__pycache__/
