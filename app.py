@@ -1,14 +1,9 @@
+from src.sentence_clean import *
 from src.sentences_similar_users import *
 
-df = main()
-user_description = input("Enter your description to find the matching: ")
-clean_input = clean_input(user_description)
-score = similarities(df, clean_input)
-id_rank = rank_score(score)
 
-user_list = top_similar(df, id_rank)
+first_text = input("Enter your first text: ")
+second_text = input("Enter your second text: ")
 
-print('\nThe top similar users are:')
-for user in user_list:
-    print(user)
-
+clean_first_text = clean_text(first_text)
+clean_second_text = clean_second(first_text)
