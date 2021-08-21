@@ -1,7 +1,6 @@
 from src.sentence_clean import *
 from src.similarity_tfidf import *
 from src.similarity_jaccard import *
-from src.similarities_scores import *
 from src.similarity_hugging_face import *
 
 
