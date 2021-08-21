@@ -1,5 +1,9 @@
-from src import similarity_hugging_face
+from src.sentence_clean import *
+from src.sentences_similar_users import *
 
 
-raw_input = input("Enter two sentences seperated by full stop.")
-similarity_hugging_face.similar_check(raw_input)
+first_text = input("Enter your first text: ")
+second_text = input("Enter your second text: ")
+
+clean_first_text = clean_text(first_text)
+clean_second_text = clean_second(first_text)
