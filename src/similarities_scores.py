@@ -1,10 +1,22 @@
-from sentence_transformers import SentenceTransformer, utis
+from sentence_transformers import SentenceTransformer, util
 
 
-def cosine_similarities(text_1, text_2):
+def jaccard_similarity(list1, list2):
+    """Calculates the jaccard similarity of two lists.
 
-    text_1_embedding = model.encode(text_1, convert_to_numpy=True)
-    text_2_embedding = model.encode(text_2, convert_to_numpy=True)
-    cosine_scores = util.cos_sim(text_1_embedding, text_2_embedding)
+    Parameters
+    ----------
+    list1 : [list]
+        [a list containing a sentence]
+    list2 : [list]
+        [a list containing a sentence]
 
-    return cosine_scores
+    Returns
+    -------
+    [float]
+        [returns the similarity score nin float]
+    """
+    intersection = len(set(list1).intersection(list2))
+    union = len(set(list1)) + len(set(list2)) - intersection
+
+    return intersection / union
