@@ -1,6 +1,3 @@
-from sentence_transformers import SentenceTransformer, util
-
-
 def jaccard_similarity(list1, list2):
     """Calculates the jaccard similarity of two lists.
 
