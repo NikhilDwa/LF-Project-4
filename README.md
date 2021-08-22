@@ -29,7 +29,7 @@ Score is the similarity score with 1 being the highest similarity.
 
 ```bash 
 Pairwise similarity by tfidf:
-   (0, 1)       1.0000000000000002
+  (0, 1)       1.0000000000000002
   (0, 0)        1.0000000000000002
 
 jaccard similarity: 1.0
