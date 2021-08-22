@@ -22,7 +22,8 @@ def tfidf_vector(sentence_1, sentence_2):
     document = [sent_1, sent_2]
     try:
         tfidf = TfidfVectorizer(stop_words="english").fit_transform(document)
-        pairwise_similarity = (tfidf * tfidf.T)[0]
+        pairwise_similarity = tfidf * tfidf.T
+        pairwise_similarity = pairwise_similarity[0]
     except:
         pairwise_similarity = "No pairwise similarity."
     return pairwise_similarity
