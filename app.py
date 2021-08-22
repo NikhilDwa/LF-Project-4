@@ -8,6 +8,8 @@ def model():
     return sentence_transformer_model
 
 
+
+
 first_text = input("Enter your first text: ")
 second_text = input("Enter your second text: ")
 
