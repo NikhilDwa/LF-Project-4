@@ -14,25 +14,23 @@ python run app.py
 
 Enter the first and the second text.
 ```bash
-Enter your first text. it is a sunny day today
-Enter your second text. it is a sunny day today
+Enter your first text: Today is sunny day.
+Enter your second text: Today is very hot.
 ```
 
 ### Analyzing the result
 ```bash
- Using hugging similarity, the similarity score between the text:
-['day today sunny']      ['day today sunny']     Score: 1.000000238418579
-```
-The words inside the [] brackets are the words used to calculate the score. 
+Hugging face similarity: 0.69
+``` 
 
 Score is the similarity score with 1 being the highest similarity.
 
 ```bash 
 Pairwise similarity by tfidf:
-  (0, 1)       1.0000000000000002
-  (0, 0)        1.0000000000000002
+  (0, 1)       0.26
+  (0, 0)       0.26
 
-jaccard similarity: 1.0
+jaccard similarity: 0.0
 ```
 The second half shows the pairwise similarity score of the first(0) and the second(1) sentence.
 (0,0) is the similarity score with the same sentence.
