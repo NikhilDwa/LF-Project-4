@@ -12,6 +12,7 @@ def clean_text(text):
     [list]
         [returns a list of string of cleaned word.]
     """
+
     text = text.lower()
     text = re.sub(r"\[[0-9]*\]", " ", text)  # return white-space where similar text pattern is obtained
     text = re.sub(r"\d", " ", text)  # return white-space where there is digits (0-9) in the text
