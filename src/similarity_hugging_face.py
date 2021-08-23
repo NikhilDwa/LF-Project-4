@@ -18,4 +18,5 @@ def similar_check(model, sentence_1, sentence_2):
 
     cosine_scores = util.cos_sim(embeddings_1, embeddings_2)
     round_off_cosine_scores = "{:0.2f}".format(cosine_scores.item())
+
     return round_off_cosine_scores
