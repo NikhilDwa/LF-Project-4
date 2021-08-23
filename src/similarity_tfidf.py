@@ -26,4 +26,5 @@ def tfidf_vector(sentence_1, sentence_2):
         pairwise_similarity = pairwise_similarity[0]
     except:
         pairwise_similarity = "No pairwise similarity."
+
     return pairwise_similarity

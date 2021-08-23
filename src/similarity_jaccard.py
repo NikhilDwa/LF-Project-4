@@ -13,10 +13,12 @@ def jaccard_similarity(list1, list2):
     [float]
         [returns the similarity score nin float]
     """
+
     intersection = len(set(list1).intersection(list2))
     union = len(set(list1)) + len(set(list2)) - intersection
     try:
         similarity_score = intersection / union
     except:
         similarity_score = "Similarity score can't be calculated."
+
     return similarity_score
